@@ -107,8 +107,8 @@
           if (strpos($file, '.png'))
           { ?>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-              <img class="img-responsive customer-img" src="images/about/<?php echo $file; ?>" alt="">
-              <p class="text-muted">Wordpress</p>
+              <img class="img-responsive customer-img" style="margin:0 auto;" src="images/about/<?php echo $file; ?>" alt="">
+              <p class="text-center text-muted"><?php $name = explode('.', $file); echo $name[0]; ?></p>
             </div>
           <?php }
         }

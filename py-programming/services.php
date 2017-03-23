@@ -1,5 +1,10 @@
 <?php include_once('includes/header.php'); ?>
 <?php include_once('includes/navigation.php'); ?>
+  <style media="screen">
+    .panel {
+      min-height: 40%;
+    }
+  </style>
   <div class="container">
     <div class="row">
       <div class="col-lg-12">

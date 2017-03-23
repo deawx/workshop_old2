@@ -3,9 +3,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="page-header">Contact
-        <small>Subheading</small>
-      </h1>
+      <h1 class="page-header">การติดต่อเรา <small></small> </h1>
       <ol class="breadcrumb">
         <li><a href="index.html">Home</a>
         </li>
@@ -15,7 +13,13 @@
   </div>
   <div class="row">
     <div class="col-md-8">
-      <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961716.406742019!2d96.99273856689352!3d13.000172109848195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9ed72c880757e802!2z4Lib4Lij4Liw4LmA4LiX4Lio4LmE4LiX4Lii!5e0!3m2!1sth!2sth!4v1490276476387"
+        width="100%" height="400px"
+        frameborder="0" scrolling="no"
+        marginheight="0" marginwidth="0"
+        style="border:0" allowfullscreen>
+      </iframe>
     </div>
     <div class="col-md-4">
       <h3>Contact Details</h3>

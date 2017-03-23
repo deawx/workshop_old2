@@ -1,45 +1,15 @@
 <?php include_once('includes/header.php'); ?>
 <style media="screen">
-  img {
-    cursor: zoom-in;
-  }
-  .thumbnail {
-    border: none;
-  }
+  img { cursor: zoom-in; }
+  .thumbnail { border: none; }
 </style>
 <?php include_once('includes/navigation.php'); ?>
 <header id="myCarousel" class="carousel slide">
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
   <div class="carousel-inner">
-    <div class="item active">
-      <div class="fill" style="background-image:url('images/slide-1.jpg');"></div>
-      <div class="carousel-caption">
-        <h2>Caption 1</h2>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('images/slide-2.jpg');"></div>
-      <div class="carousel-caption">
-        <h2>Caption 2</h2>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('images/slide-3.jpg');"></div>
-      <div class="carousel-caption">
-        <h2>Caption 3</h2>
-      </div>
-    </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('images/slide-4.jpg');"></div>
-      <div class="carousel-caption">
-        <h2>Caption 4</h2>
-      </div>
-    </div>
+    <div class="item active"> <div class="fill" style="background-image:url('images/slide-1.jpg');"></div> </div>
+    <div class="item"> <div class="fill" style="background-image:url('images/slide-2.jpg');"></div> </div>
+    <div class="item"> <div class="fill" style="background-image:url('images/slide-3.jpg');"></div> </div>
+    <div class="item"> <div class="fill" style="background-image:url('images/slide-4.jpg');"></div> </div>
   </div>
   <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="icon-prev"></span> </a>
   <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="icon-next"></span> </a>
@@ -113,27 +83,27 @@
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
       <img class="img-responsive img-portfolio img-hover" src="images/solution-2.jpg" alt="">
-      <div class="caption"> เว็บหน้าร้านขายสินค้า <i class="fa fa-check-circle"></i></div>
+      <div class="caption text-center"> เว็บหน้าร้านขายสินค้า <i class="fa fa-check-circle"></i></div>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
       <img class="img-responsive img-portfolio img-hover" src="images/solution-1.jpg" alt="">
-      <div class="caption"> เว็บข่าวสารหรือนิตยสาร <i class="fa fa-check-circle"></i></div>
+      <div class="caption text-center"> เว็บข่าวสารหรือนิตยสาร <i class="fa fa-check-circle"></i></div>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
       <img class="img-responsive img-portfolio img-hover" src="images/solution-3.jpg" alt="">
-      <div class="caption"> เว็บตัวแทนจำหน่ายหรือเอเจนซี่ <i class="fa fa-check-circle"></i></div>
+      <div class="caption text-center"> เว็บตัวแทนจำหน่ายหรือเอเจนซี่ <i class="fa fa-check-circle"></i></div>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
       <img class="img-responsive img-portfolio img-hover" src="images/solution-5.jpg" alt="">
-      <div class="caption"> เว็บรายการแสดงข้อมูล <i class="fa fa-check-circle"></i></div>
+      <div class="caption text-center"> เว็บรายการแสดงข้อมูล <i class="fa fa-check-circle"></i></div>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
       <img class="img-responsive img-portfolio img-hover" src="images/solution-4.jpg" alt="">
-      <div class="caption"> เว็บที่อยู่อาศัยหรือการท่องเที่ยว <i class="fa fa-check-circle"></i></div>
+      <div class="caption text-center"> เว็บที่อยู่อาศัยหรือการท่องเที่ยว <i class="fa fa-check-circle"></i></div>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
       <img class="img-responsive img-portfolio img-hover" src="images/solution-6.jpg" alt="">
-      <div class="caption"> เว็บอัลบั้มหรือแฟ้มสะสมผลงาน <i class="fa fa-check-circle"></i></div>
+      <div class="caption text-center"> เว็บอัลบั้มหรือแฟ้มสะสมผลงาน <i class="fa fa-check-circle"></i></div>
     </div>
   </div>
   <div class="row">
@@ -192,13 +162,16 @@
 </div>
 <?php include_once('includes/sources.php'); ?>
 <script>
-$('.carousel').carousel({
-  interval: 5000 //changes the speed
-});
-$('img').on('click', function(){
-  $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
-  $('#enlargeImageModal').modal('show');
-});
+  $('.carousel').carousel({
+    interval: 5000
+  });
+  $('img').on('click', function(){
+    $('.enlargeImageModalSource')
+      .attr('src', $(this)
+      .attr('src'));
+    $('#enlargeImageModal')
+      .modal('show');
+  });
 </script>
 </body>
 </html>

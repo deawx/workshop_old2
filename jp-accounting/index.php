@@ -8,7 +8,7 @@
   <meta name="description" content="บริษัท เจ.พี. แอคเคาน์ติ้ง จำกัด (J.P. ACCOUNTING CO.,LTD.)">
   <meta name="keywords" content="">
   <meta name="author" content="PY-Programming">
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css" rel="stylesheet">
   <link href="css/scrolling-nav.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -244,7 +244,7 @@
         </div>
         <div class="col-sm-6">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248057.5394050439!2d100.493026436325!3d13.724561030494884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6032280d61f3%3A0x10100b25de24820!2z4LiB4Lij4Li44LiH4LmA4LiX4Lie4Lih4Lir4Liy4LiZ4LiE4Lij!5e0!3m2!1sth!2sth!4v1490096218743"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15500.152139009608!2d100.5841183!3d13.7765799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe3b00826fc69783!2z4Lia4Lij4Li04Lip4Lix4LiXIOC5gOC4iC7guJ7guLUu4LmB4Lit4LiE4LmA4LiE4Liy4LiZ4LmM4LiV4Li04LmJ4LiHIOC4iOC4s-C4geC4seC4lA!5e0!3m2!1sth!2sth!4v1490324177086"
             width="100%" height="450"
             frameborder="0" style="border:0"
             allowfullscreen>
@@ -252,9 +252,10 @@
         </div>
         <div class="col-sm-6 text-left">
           <address>
-            <p class="lead">บริษัท เจ.พี. แอคเคาน์ติ้ง จำกัด</p>
-            address<br>
-            address<br>
+            <p class="lead">บริษัท เจพี แอคเคาน์ติ้ง จำกัด</p>
+            773/93 ถนนประชาราษฏร์บำเพ็ญ<br>
+            แขวงสามเสนนอก เขตห้วยขวาง<br>
+            กรุงเทพมหานคร. 10310<br>
           </address>
           <address>
             <p><abbr title="">อีเมล์ : </abbr><a href="mailto:#">jp.acc55@hotmail.com</a></p>

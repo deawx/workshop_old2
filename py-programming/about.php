@@ -1,5 +1,8 @@
 <?php include_once('includes/header.php'); ?>
 <?php include_once('includes/navigation.php'); ?>
+<style media="screen">
+  .thumbnail img { width: 100%; }
+</style>
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
@@ -39,7 +42,7 @@
     </div>
     <div class="col-sm-6 col-md-4 text-center">
       <div class="thumbnail">
-        <img class="img-responsive" src="images/about/analysis.jpg" alt="">
+        <img class="img-responsive" style="width:100%;" src="images/about/analysis.jpg" alt="">
         <div class="caption">
           <h3>วิเคราะห์และออกแบบ<br> <small></small> </h3>
           <p>รับผิดชอบงานด้านการวิเคราะห์ความต้องการของระบบเพื่อออกแบบการทำงานให้มีประสิทธิภาพ</p>

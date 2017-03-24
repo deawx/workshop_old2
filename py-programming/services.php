@@ -1,8 +1,10 @@
 <?php include_once('includes/header.php'); ?>
 <?php include_once('includes/navigation.php'); ?>
   <style media="screen">
-    .panel {
-      min-height: 100px;
+    .panel { min-height: 100px; }
+    .panel-heading {
+      background-size: cover;
+      background-position: 50% 50%;
     }
   </style>
   <div class="container">

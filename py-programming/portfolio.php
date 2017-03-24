@@ -12,36 +12,27 @@
   </div>
   <div class="row">
     <?php
-    $dir = "images/portfolio";
-    if (is_dir($dir))
+    $path = 'images/portfolio/';
+    if (isset($_GET['album']))
     {
-      if ($dh = opendir($dir))
+      $dir = $path.$_GET['album'];
+      if (is_dir($dir))
       {
-        while (($fols = readdir($dh)) !== false)
+        include_once('images/portfolio/'.$_GET['album'].'/index.html');
+      }
+    }
+    else
+    {
+      foreach (scandir($path) as $key => $value)
+      {
+        if (strlen($value) > 2)
         {
-          $fol = "images/portfolio/".$fols;
-          if (is_dir($fol) && strpos($fol, '.') === false)
-          {
-            if ($pcs = opendir($fol))
-            {
-              while (($pc = readdir($pcs)) !== false)
-              {
-                if ($pc === '1.png')
-                {
-                  ?>
-                  <div class="col-md-4 img-portfolio">
-                    <a href="<?php echo $fols; ?>"> <img class="img-responsive img-hover" src="<?php echo $fol.'/'.$pc; ?>" alt=""> </a>
-                    <h3> <a href="<?php echo $fols; ?>"><?php echo $fols; ?></a> </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                  </div>
-                  <?php
-                }
-              }
-              closedir($pcs);
-            }
-          }
+          $name = iconv("tis-620", "utf-8", $value);
+          ?>
+          <?php
+          echo '<img src="'.$path.$name.'/1.png">';
+          echo $name.'<br>';
         }
-        closedir($dh);
       }
     }
     ?>

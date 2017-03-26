@@ -25,7 +25,6 @@
 </head>
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header page-scroll">
@@ -42,11 +41,11 @@
         <ul class="nav navbar-nav navbar-right">
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
-          <li> <a class="page-scroll" href="#about" style="font-size:1.2em;">เกี่ยวกับเรา</a> </li>
-          <li> <a class="page-scroll" href="#team" style="font-size:1.2em;">ทีมงานของเรา</a> </li>
-          <li> <a class="page-scroll" href="#services" style="font-size:1.2em;">บริการของเรา</a> </li>
-          <li> <a class="page-scroll" href="#albums" style="font-size:1.2em;">อัลบั้มผลงาน</a> </li>
-          <li> <a class="page-scroll" href="#contact" style="font-size:1.2em;">ติดต่อเรา</a> </li>
+          <li> <a class="page-scroll" href="#about" style="font-size:16px;">เกี่ยวกับเรา</a> </li>
+          <li> <a class="page-scroll" href="#team" style="font-size:16px;">ทีมงานของเรา</a> </li>
+          <li> <a class="page-scroll" href="#services" style="font-size:16px;">บริการของเรา</a> </li>
+          <li> <a class="page-scroll" href="#albums" style="font-size:16px;">อัลบั้มผลงาน</a> </li>
+          <li> <a class="page-scroll" href="#contact" style="font-size:16px;">ติดต่อเรา</a> </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -59,11 +58,10 @@
     background-position:center;
     background-size:100%;
     background-repeat:no-repeat;
-    margin-top:63px;
-    height:40%;">
+    margin-top:60px;
+    height:45%;">
   </div>
 
-  <!-- Intro Section -->
   <section id="intro" class="intro-section">
     <div class="container">
       <div class="row">
@@ -71,9 +69,9 @@
           <img class="img-responsive" src="images/intro.jpg" alt="">
         </div>
         <div class="col-md-4 text-left">
-          <h2 class="text-primary">
-            บริษัท เจ.พี. แอคเคาน์ติ้ง จำกัด <small>(J.P. ACCOUNTING CO.,LTD.)</small>
-          </h2><br>
+          <h3 class="text-primary">
+            บริษัท เจ.พี. แอคเคาน์ติ้ง จำกัด <br><small>(J.P. ACCOUNTING CO.,LTD.)</small>
+          </h3><br>
           <p> <a href="data/pdf1.pdf" target="_blank">คลิกที่นี่</a> <span class="text-muted">เพื่อดูหนังสือรับรอง</span></p>
           <p> <a href="data/pdf2.pdf" target="_blank">คลิกที่นี่</a> <span class="text-muted">เพื่อดูใบทะเบียนภาษี</span></p>
           <p> <a href="data/pdf3.pdf" target="_blank">คลิกที่นี่</a> <span class="text-muted">เพื่อดูหนังสือจดทะเบียน</span></p>
@@ -104,15 +102,16 @@
     </div><br>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="container" style="background:#ffff;">
+  <section id="about" class="about-section"
+    style="background-image:url('images/about.jpg');background-size:cover;">
+    <div class="container" style="background-color:#fff;">
       <div class="row">
         <div class="col-lg-12">
           <h1 class="text-primary">ข้อมูลทั่วไปเกี่ยวกับเรา</h1><hr>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6">
-          <img src="images/about.jpg" class="img-responsive" style="height:100%;width:100%;" alt="">
+          <img src="images/about.jpg" class="img-responsive"
+            style="height:100%;width:100%;" alt="">
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6 text-left">
           <p style="text-indent:2em;">
@@ -135,7 +134,6 @@
     </div>
   </section>
 
-  <!-- Team Section -->
   <section id="team" class="team-section">
     <div class="container">
       <div class="row">
@@ -170,9 +168,9 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services-section">
-    <div class="container">
+  <section id="services" class="services-section"
+    style="background-image:url('images/service.jpg');background-size:cover;">
+    <div class="container" style="background-color:#fff;">
       <div class="row">
         <div class="col-lg-12">
           <h1 class="text-primary">การให้บริการของเรา</h1><hr>
@@ -206,7 +204,6 @@
     </div>
   </section>
 
-  <!-- Albums Section -->
   <section id="albums" class="albums-section">
     <div class="container">
       <div class="row">
@@ -235,7 +232,6 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <div class="container">
       <div class="row">
@@ -262,6 +258,25 @@
             <p><abbr title="Phone">โทรศัพท์ : </abbr>02-691-2835, 089-813-0399</p>
           </address>
         </div>
+      </div><hr>
+      <div class="row well">
+        <form class="" action="" method="post">
+            <div class="form-group">
+              <label for=""></label>
+              <input type="text" class="form-control" id="" placeholder="ชื่อของท่าน" name="name">
+            </div>
+            <div class="form-group">
+              <label for=""></label>
+              <input type="text" class="form-control" id="" placeholder="อีเมล์ของท่าน" name="email">
+            </div>
+            <div class="form-group">
+              <label for=""></label>
+              <textarea class="form-control" name="text" rows="8" cols="80"></textarea>
+            </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block" name="">Send</button>
+          </div>
+        </form>
       </div>
     </div>
   </section>

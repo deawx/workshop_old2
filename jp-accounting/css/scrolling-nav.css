@@ -20,35 +20,31 @@ html {
 }
 
 .intro-section {
-  min-height: 100%;
+  text-align: center;
+}
+
+.about-section {
   text-align: center;
   background: #fff;
 }
 
-.about-section {
-  min-height: 100%;
+.team-section {
   text-align: center;
   background: #eee;
-}
-
-.team-section {
-  min-height: 100%;
-  text-align: center;
 }
 
 .services-section {
-  min-height: 100%;
   text-align: center;
-  background: #eee;
+  background: #fff;
 }
 
 .albums-section {
-  min-height: 100%;
   text-align: center;
+  background: #eee;
 }
 
 .contact-section {
   min-height: 100%;
   text-align: center;
-  background: #eee;
+  background: #fff;
 }

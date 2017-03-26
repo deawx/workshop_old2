@@ -1,81 +1,63 @@
 <?php include_once('includes/header.php'); ?>
 <?php include_once('includes/navigation.php'); ?>
+<?php $album = isset($_GET['album']) ? $_GET['album'] : ''; ?>
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="page-header">Portfolio Item
-        <small>Subheading</small>
-      </h1>
+      <h1 class="page-header"><?php echo $album; ?> <small></small> </h1>
       <ol class="breadcrumb">
-        <li><a href="index.html">Home</a>
-        </li>
-        <li class="active">Portfolio Item</li>
+        <li><a href="index.html">Home</a> </li>
+        <li class="active"><?php echo $album; ?></li>
       </ol>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active">
-            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+    <?php
+    include_once('bin/portfolio.php');
+    // echo '<pre>';
+    // print_r($portfolio);
+    // echo '</pre>';
+    if (array_key_exists($album, $portfolio)) { ?>
+      <div class="col-md-8">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item active"> <img style="width:100%;" class="img-responsive" src="images/portfolio/<?php echo $album; ?>/1.png" alt=""> </div>
+            <div class="item"> <img style="width:100%;" class="img-responsive" src="images/portfolio/<?php echo $album; ?>/2.png" alt=""> </div>
+            <div class="item"> <img style="width:100%;" class="img-responsive" src="images/portfolio/<?php echo $album; ?>/3.png" alt=""> </div>
+            <div class="item"> <img style="width:100%;" class="img-responsive" src="images/portfolio/<?php echo $album; ?>/4.png" alt=""> </div>
+            <div class="item"> <img style="width:100%;" class="img-responsive" src="images/portfolio/<?php echo $album; ?>/5.png" alt=""> </div>
           </div>
-          <div class="item">
-            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-          </div>
-          <div class="item">
-            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-          </div>
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
         </div>
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+      </div>
+      <div class="col-md-4">
+        <h3><?php echo $portfolio[$album]['title']; ?></h3>
+        <p><?php echo $portfolio[$album]['description']; ?></p>
+        <h3>รายละเอียดทั่วไป</h3>
+        <ul>
+          <?php foreach ($portfolio[$album]['detail'] as $detail) { ?>
+            <li><?php echo $detail; ?></li>
+          <?php } ?>
+        </ul>
       </div>
     </div>
-    <div class="col-md-4">
-      <h3>Project Description</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-      <h3>Project Details</h3>
-      <ul>
-        <li>Lorem Ipsum</li>
-        <li>Dolor Sit Amet</li>
-        <li>Consectetur</li>
-        <li>Adipiscing Elit</li>
-      </ul>
-    </div>
-  </div>
+    <?php } ?>
   <div class="row">
-    <div class="col-lg-12">
-      <h3 class="page-header">Related Projects</h3>
-    </div>
-    <div class="col-sm-3 col-xs-6">
-      <a href="#">
-        <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-      </a>
-    </div>
-    <div class="col-sm-3 col-xs-6">
-      <a href="#">
-        <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-      </a>
-    </div>
-    <div class="col-sm-3 col-xs-6">
-      <a href="#">
-        <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-      </a>
-    </div>
-    <div class="col-sm-3 col-xs-6">
-      <a href="#">
-        <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-      </a>
-    </div>
+    <div class="col-lg-12"> <h3 class="page-header">ผลงานที่น่าสนใจ</h3> </div>
+    <?php foreach (array_rand($portfolio, 4) as $key => $value) { ?>
+      <div class="col-sm-3 col-xs-6">
+        <a href="portfolio-item.php?album=<?php echo $value; ?>">
+          <img
+            class="img-responsive img-hover img-related"
+            src="images/portfolio/<?php echo $value; ?>/1.png" alt="">
+        </a>
+      </div>
+    <?php } ?>
   </div>
   <hr>
   <?php include_once('includes/footer.php'); ?>

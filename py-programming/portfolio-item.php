@@ -4,19 +4,16 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="page-header"><?php echo $album; ?> <small></small> </h1>
+      <h1 class="page-header"><?php echo ucfirst($album); ?> <small></small> </h1>
       <ol class="breadcrumb">
-        <li><a href="index.html">Home</a> </li>
-        <li class="active"><?php echo $album; ?></li>
+        <li><a href="index.php">Home</a> </li>
+        <li class="active"><?php echo ucfirst($album); ?></li>
       </ol>
     </div>
   </div>
   <div class="row">
     <?php
     include_once('bin/portfolio.php');
-    // echo '<pre>';
-    // print_r($portfolio);
-    // echo '</pre>';
     if (array_key_exists($album, $portfolio)) { ?>
       <div class="col-md-8">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

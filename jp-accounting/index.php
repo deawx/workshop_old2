@@ -8,7 +8,8 @@
   <meta name="description" content="บริษัท เจ.พี. แอคเคาน์ติ้ง จำกัด (J.P. ACCOUNTING CO.,LTD.)">
   <meta name="keywords" content="">
   <meta name="author" content="PY-Programming">
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="css/theme.min.css" rel="stylesheet">
   <link href="css/scrolling-nav.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,9 +24,8 @@
     .thumbnail img { width: 100%; }
   </style>
 </head>
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -36,10 +36,8 @@
         </button>
         <a class="navbar-brand page-scroll" href="#page-top">หน้าหลัก</a>
       </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
           <li> <a class="page-scroll" href="#about" style="font-size:16px;">เกี่ยวกับเรา</a> </li>
           <li> <a class="page-scroll" href="#team" style="font-size:16px;">ทีมงานของเรา</a> </li>
@@ -48,9 +46,7 @@
           <li> <a class="page-scroll" href="#contact" style="font-size:16px;">ติดต่อเรา</a> </li>
         </ul>
       </div>
-      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
   </nav>
 
   <div class="jumbotron" style="
@@ -58,16 +54,14 @@
     background-position:center;
     background-size:100%;
     background-repeat:no-repeat;
-    margin-top:60px;
+    margin-top:40px;
     height:45%;">
   </div>
 
   <section id="intro" class="intro-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <img class="img-responsive" src="images/intro.jpg" alt="">
-        </div>
+        <div class="col-md-8"> <img class="img-responsive" src="images/intro.jpg" alt=""> </div>
         <div class="col-md-4 text-left">
           <h3 class="text-primary">
             บริษัท เจ.พี. แอคเคาน์ติ้ง จำกัด <br><small>(J.P. ACCOUNTING CO.,LTD.)</small>
@@ -198,7 +192,7 @@
           </ul>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6">
-          <img src="images/service.jpg" class="img-responsive" style="height:100%;width:100%;" alt="">
+          <img src="images/service.jpg" class="img-responsive" style="" alt="">
         </div>
       </div><br>
     </div>
@@ -211,22 +205,34 @@
             <h1 class="text-primary">แฟ้มสะสมผลงาน</h1><hr>
           </div>
           <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail"> <img class="img-responsive" src="http://placehold.it/300x300" alt="..."> <div class="caption"> ... </div> </a>
+            <a target="_blank" href="data/sample1.pdf" class="thumbnail">
+              <img class="img-responsive" src="images/sample1.jpg" alt="" style="width:285px;height:285px;">
+              <div class="caption">ตัวอย่างงบการเงิน</div>
+            </a>
           </div>
           <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail"> <img class="img-responsive" src="http://placehold.it/300x300" alt="..."> <div class="caption"> ... </div> </a>
+            <a target="_blank" href="data/sample2.pdf" class="thumbnail">
+              <img class="img-responsive" src="images/sample2.jpg" alt="" style="width:285px;height:285px;">
+              <div class="caption">ตัวอย่างงบการเงิน</div>
+            </a>
           </div>
           <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail"> <img class="img-responsive" src="http://placehold.it/300x300" alt="..."> <div class="caption"> ... </div> </a>
+            <a target="_blank" href="data/sample3.pdf" class="thumbnail">
+              <img class="img-responsive" src="images/sample3.jpg" alt="" style="width:285px;height:285px;">
+              <div class="caption">แบบภงด.50</div>
+            </a>
           </div>
-          <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail"> <img class="img-responsive" src="http://placehold.it/300x300" alt="..."> <div class="caption"> ... </div> </a>
+          <div class="col-xs-6 col-md-6">
+            <a target="_blank" href="data/sample4.pdf" class="thumbnail">
+              <img class="img-responsive" src="images/sample4.jpg" alt="" style="width:285px;height:285px;">
+              <div class="caption">แบบภงด.50</div>
+            </a>
           </div>
-          <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail"> <img class="img-responsive" src="http://placehold.it/300x300" alt="..."> <div class="caption"> ... </div> </a>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail"> <img class="img-responsive" src="http://placehold.it/300x300" alt="..."> <div class="caption"> ... </div> </a>
+          <div class="col-xs-12 col-md-6">
+            <a target="_blank" href="data/sample5.pdf" class="thumbnail">
+              <img class="img-responsive" src="images/sample5.jpg" alt="" style="width:285px;height:285px;">
+              <div class="caption">เอกสารต่อเวิร์คเพอร์มิต</div>
+            </a>
           </div>
       </div>
     </div>
@@ -235,55 +241,75 @@
   <section id="contact" class="contact-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <h1 class="text-primary">สามารถติดต่อเราได้ที่</h1><hr>
-        </div>
+        <div class="col-lg-12"> <h1 class="text-primary">สามารถติดต่อเราได้ที่</h1><hr> </div>
         <div class="col-sm-6">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15500.152139009608!2d100.5841183!3d13.7765799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe3b00826fc69783!2z4Lia4Lij4Li04Lip4Lix4LiXIOC5gOC4iC7guJ7guLUu4LmB4Lit4LiE4LmA4LiE4Liy4LiZ4LmM4LiV4Li04LmJ4LiHIOC4iOC4s-C4geC4seC4lA!5e0!3m2!1sth!2sth!4v1490324177086"
-            width="100%" height="450"
+            width="100%" height="630"
             frameborder="0" style="border:0"
             allowfullscreen>
           </iframe>
         </div>
         <div class="col-sm-6 text-left">
-          <address>
-            <p class="lead">บริษัท เจพี แอคเคาน์ติ้ง จำกัด</p>
-            773/93 ถนนประชาราษฏร์บำเพ็ญ<br>
-            แขวงสามเสนนอก เขตห้วยขวาง<br>
-            กรุงเทพมหานคร. 10310<br>
-          </address>
-          <address>
-            <p><abbr title="">อีเมล์ : </abbr><a href="mailto:#">jp.acc55@hotmail.com</a></p>
-            <p><abbr title="Phone">โทรศัพท์ : </abbr>02-691-2835, 089-813-0399</p>
-          </address>
+          <div class="well">
+            <address>
+              <p class="lead">บริษัท เจพี แอคเคาน์ติ้ง จำกัด</p>
+              773/93 ถนนประชาราษฏร์บำเพ็ญ<br>
+              แขวงสามเสนนอก เขตห้วยขวาง<br>
+              กรุงเทพมหานคร. 10310<br>
+            </address>
+            <address>
+              <p><abbr title="">อีเมล์ : </abbr><a href="mailto:#">jp.acc55@hotmail.com</a></p>
+              <p><abbr title="Phone">โทรศัพท์ : </abbr>02-691-2835, 089-813-0399</p>
+            </address>
+            <form class="" action="script/email.php" method="post" onsubmit="check_if_capcha_is_filled">
+              <div class="form-group">
+                <input type="text" class="form-control" required placeholder="ชื่อของท่าน" name="name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" required placeholder="อีเมล์ของท่าน" name="email">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" required placeholder="เบอร์โทรศัพท์" name="phone">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" required name="message" rows="8" cols="80"></textarea>
+              </div>
+              <div class="form-group">
+                <div class="g-recaptcha"
+                  data-callback="capcha_filled"
+                  data-expired-callback="capcha_expired"
+                  data-sitekey="6LdlrhoUAAAAAMwRaDQt5C5cVO3JN64SKInfqoje">
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" name="">ส่งข้อความถึงเรา</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div><hr>
-      <div class="row well">
-        <form class="" action="" method="post">
-            <div class="form-group">
-              <label for=""></label>
-              <input type="text" class="form-control" id="" placeholder="ชื่อของท่าน" name="name">
-            </div>
-            <div class="form-group">
-              <label for=""></label>
-              <input type="text" class="form-control" id="" placeholder="อีเมล์ของท่าน" name="email">
-            </div>
-            <div class="form-group">
-              <label for=""></label>
-              <textarea class="form-control" name="text" rows="8" cols="80"></textarea>
-            </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block" name="">Send</button>
-          </div>
-        </form>
-      </div>
     </div>
   </section>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/scrolling-nav.js"></script>
+  <script type="text/javascript">
+  var allowSubmit = false;
+  function capcha_filled () {
+    allowSubmit = true;
+  }
+  function capcha_expired () {
+    allowSubmit = false;
+  }
+  function check_if_capcha_is_filled (e) {
+    if(allowSubmit) return true;
+    e.preventDefault();
+    alert('Fill in the reCapcha!');
+  }
+  </script>
 </body>
 </html>

@@ -3,12 +3,9 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="page-header">Pricing Table
-        <small>Subheading</small>
-      </h1>
+      <h1 class="page-header">Pricing Table <small></small> </h1>
       <ol class="breadcrumb">
-        <li><a href="index.html">Home</a>
-        </li>
+        <li><a href="index.html">Home</a> </li>
         <li class="active">Pricing Table</li>
       </ol>
     </div>
@@ -16,12 +13,10 @@
   <div class="row">
     <div class="col-md-4">
       <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h3 class="panel-title">Basic</h3>
-        </div>
+        <div class="panel-heading"> <h3 class="panel-title">Standalone</h3> </div>
         <div class="panel-body">
-          <span class="price"><sup>$</sup>19<sup>99</sup></span>
-          <span class="period">per month</span>
+          <span class="price">1x,000<sup>฿</sup></span>
+          <span class="period">ระยะเวลาขั้นต่ำ 30 วัน</span>
         </div>
         <ul class="list-group">
           <li class="list-group-item"><strong>1</strong> User</li>
@@ -56,9 +51,7 @@
     </div>
     <div class="col-md-4">
       <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h3 class="panel-title">Ultra</h3>
-        </div>
+        <div class="panel-heading"> <h3 class="panel-title">Ultra</h3> </div>
         <div class="panel-body">
           <span class="price"><sup>$</sup>159<sup>99</sup></span>
           <span class="period">per month</span>

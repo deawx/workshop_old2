@@ -82,28 +82,52 @@
       <h2 class="page-header"> ประสบการณ์ที่เรามอบให้ </h2>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
-      <img class="img-responsive img-portfolio img-hover" src="images/solution-2.jpg" alt="">
-      <div class="caption text-center"> เว็บหน้าร้านขายสินค้า <i class="fa fa-check-circle"></i></div>
+      <img
+        class="img-responsive img-portfolio img-hover"
+        src="images/solution-01.jpg"
+        style="width:380px;height:245px;"
+        alt="">
+        <div class="caption text-center"> เทมเพลตข่าวสารหรือนิตยสาร <i class="fa fa-check-circle"></i></div>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
-      <img class="img-responsive img-portfolio img-hover" src="images/solution-1.jpg" alt="">
-      <div class="caption text-center"> เว็บข่าวสารหรือนิตยสาร <i class="fa fa-check-circle"></i></div>
+      <img
+        class="img-responsive img-portfolio img-hover"
+        src="images/solution-02.jpg"
+        style="width:380px;height:245px;"
+        alt="">
+        <div class="caption text-center"> เทมเพลตหน้าร้านขายสินค้า <i class="fa fa-check-circle"></i></div>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
-      <img class="img-responsive img-portfolio img-hover" src="images/solution-3.jpg" alt="">
-      <div class="caption text-center"> เว็บตัวแทนจำหน่ายหรือเอเจนซี่ <i class="fa fa-check-circle"></i></div>
+      <img
+        class="img-responsive img-portfolio img-hover"
+        src="images/solution-03.jpg"
+        style="width:380px;height:245px;"
+        alt="">
+        <div class="caption text-center"> เทมเพลตตัวแทนจำหน่ายหรือเอเจนซี่ <i class="fa fa-check-circle"></i></div>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
-      <img class="img-responsive img-portfolio img-hover" src="images/solution-5.jpg" alt="">
-      <div class="caption text-center"> เว็บรายการแสดงข้อมูล <i class="fa fa-check-circle"></i></div>
+      <img
+        class="img-responsive img-portfolio img-hover"
+        src="images/solution-04.jpg"
+        style="width:380px;height:245px;"
+        alt="">
+        <div class="caption text-center"> เทมเพลตที่อยู่อาศัยหรือการท่องเที่ยว <i class="fa fa-check-circle"></i></div>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
-      <img class="img-responsive img-portfolio img-hover" src="images/solution-4.jpg" alt="">
-      <div class="caption text-center"> เว็บที่อยู่อาศัยหรือการท่องเที่ยว <i class="fa fa-check-circle"></i></div>
+      <img
+        class="img-responsive img-portfolio img-hover"
+        src="images/solution-05.jpg"
+        style="width:380px;height:245px;"
+        alt="">
+        <div class="caption text-center"> เทมเพลตรายการแสดงข้อมูล <i class="fa fa-check-circle"></i></div>
     </div>
     <div class="thumbnail col-md-4 col-sm-6">
-      <img class="img-responsive img-portfolio img-hover" src="images/solution-6.jpg" alt="">
-      <div class="caption text-center"> เว็บอัลบั้มหรือแฟ้มสะสมผลงาน <i class="fa fa-check-circle"></i></div>
+      <img
+        class="img-responsive img-portfolio img-hover"
+        src="images/solution-06.jpg"
+        style="width:380px;height:245px;"
+        alt="">
+        <div class="caption text-center"> เทมเพลตอัลบั้มหรือแฟ้มสะสมผลงาน <i class="fa fa-check-circle"></i></div>
     </div>
   </div>
   <div class="row">
@@ -146,7 +170,7 @@
         </p>
       </div>
       <div class="col-md-4">
-        <a class="btn btn-lg btn-default btn-block" href="#">ต้องการติดต่อเรา ?</a>
+        <a class="btn btn-lg btn-default btn-block" href="agreement.php">ต้องการจ้างเรา ?</a>
       </div>
     </div>
   </div>

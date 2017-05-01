@@ -7,8 +7,7 @@
         <small>Subheading</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="index.php">Home</a>
-        </li>
+        <li> <a href="index.php">Home</a> </li>
         <li class="active">Sidebar Page</li>
       </ol>
     </div>
